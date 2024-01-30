@@ -1,0 +1,6 @@
+<form class="row mt-2">
+  <h4>agregar</h4>
+  <input [(ngModel)]="itemChar.name"  name="name" type="text"class="form-control" placeholder="personaje">
+  <input [(ngModel)]="itemChar.power" name="power" type="text"class="form-control" placeholder="poder">
+  <button type="submit" class="btn btn-primary" (click)="publicarCharacter()">agregar</button>
+</form>

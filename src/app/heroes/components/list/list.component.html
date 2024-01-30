@@ -1,0 +1,13 @@
+<h2>los putos super heroes</h2>
+<hr/>
+<button  (click)="quitarUltimo()">Borrar ultimo</button>
+
+<h1 *ngIf="heroe;else nada">borraste al puto de {{heroe}}</h1>
+<ng-template #nada>
+  <h4>no has borrado nada</h4>
+</ng-template>
+<ul>
+  <li *ngFor="let item of heroesdelsilencio">{{item}}</li>
+</ul>
+
+
